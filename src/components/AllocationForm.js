@@ -11,7 +11,7 @@ const AllocationForm = (props) => {
     const submitEvent = () => {
 
         if (cost > remaining) {
-            alert("The value cannot exceed remaining funds  £" + remaining);
+            alert("El valor no puede exceder los fondos restantes $" + remaining);
             setCost("");
             return;
         }
@@ -39,10 +39,10 @@ const AllocationForm = (props) => {
 
                 <div className="input-group mb-3" style={{ marginLeft: '2rem' }}>
                     <div className="input-group-prepend">
-                        <label className="input-group-text" htmlFor="inputGroupSelect01">Department</label>
+                        <label className="input-group-text" htmlFor="inputGroupSelect01">Departamento</label>
                     </div>
                     <select className="custom-select" id="inputGroupSelect01" onChange={(event) => setName(event.target.value)}>
-                        <option defaultValue>Choose...</option>
+                        <option defaultValue>Elegir...</option>
                         <option value="Marketing" name="marketing"> Marketing</option>
                         <option value="Sales" name="sales">Sales</option>
                         <option value="Finance" name="finance">Finance</option>
@@ -51,12 +51,13 @@ const AllocationForm = (props) => {
                         <option value="Admin" name="admin">Admin</option>
                     </select>
 
+
                     <div className="input-group-prepend" style={{ marginLeft: '2rem' }}>
-                        <label className="input-group-text" htmlFor="inputGroupSelect02">Allocation</label>
+                        <label className="input-group-text" htmlFor="inputGroupSelect02">Asignación</label>
                     </div>
                     <select className="custom-select" id="inputGroupSelect02" onChange={(event) => setAction(event.target.value)}>
-                        <option defaultValue value="Add" name="Add">Add</option>
-                        <option value="Reduce" name="Reduce">Reduce</option>
+                        <option defaultValue value="Add" name="Add">Agregar</option>
+                        <option value="Reduce" name="Reduce">Reducir</option>
                     </select>
 
                     <input
@@ -69,7 +70,7 @@ const AllocationForm = (props) => {
                     </input>
 
                     <button className="btn btn-primary" onClick={submitEvent} style={{ marginLeft: '2rem' }}>
-                        Save
+                        Guardar
                     </button>
                 </div>
             </div>

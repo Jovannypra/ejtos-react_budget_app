@@ -12,7 +12,7 @@ const App = () => {
     return (
         <AppProvider>
             <div className='container'>
-                <h1 className='mt-3'>Company's Budget Allocation</h1>
+                <h1 className='mt-3 text-center'>Asignación presupuestaria de la empresa</h1>
                 <div className='row mt-3'>
                     <div className='col-sm'>
                         <Budget />
@@ -24,13 +24,13 @@ const App = () => {
                         <ExpenseTotal />
                     </div>
                 </div>
-                <h3 className='mt-3'>Allocation</h3>
+                <h3 className='mt-3 text-center'>Asignación</h3>
                 <div className='row '>
                     <div className='col-sm'>
                         <ExpenseList />
                     </div>
                 </div>
-                <h3 className='mt-3'>Change allocation</h3>
+                <h3 className='mt-3 text-center'>Cambiar asignación</h3>
                 <div className='row mt-3'>
                     <div className='col-sm'>
                         <AllocationForm/>
